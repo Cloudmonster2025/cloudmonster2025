@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>通過率が変わる職務経歴書——「実績の数値化」より先にやるべきこと | キャリア羅針盤</title>
+<meta name="description" content="職務経歴書は「数値化」の前に「構造化」。採用側の読み方から逆算した書き方を、実務目線で解説します。">
+<style>:root{
+  --ink:#1d2b3a;
+  --paper:#ffffff;
+  --mist:#f3f4f1;
+  --amber:#e39b0f;
+  --link:#24589f;
+  --gray:#5c6670;
+  --hair:#d9dcd6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Meiryo,sans-serif;
+  color:var(--ink);background:var(--paper);
+  line-height:1.9;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* ---- header ---- */
+.site-head{
+  max-width:960px;margin:0 auto;padding:28px 20px 20px;
+  border-bottom:1px solid var(--hair);
+  display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+}
+.brand{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.5rem;font-weight:600;letter-spacing:.12em;
+  color:var(--ink);text-decoration:none;
+}
+.tagline{font-size:.78rem;color:var(--gray);letter-spacing:.14em}
+
+/* ---- hero ---- */
+.hero{
+  max-width:960px;margin:0 auto;padding:56px 20px;
+  display:flex;gap:40px;align-items:stretch;
+}
+.hero-vertical{
+  writing-mode:vertical-rl;
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.35rem;letter-spacing:.35em;font-weight:600;
+  border-right:3px solid var(--amber);
+  padding-right:18px;color:var(--ink);
+}
+.hero-main h1{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.6rem,4.5vw,2.4rem);
+  font-weight:600;line-height:1.5;letter-spacing:.05em;margin-bottom:18px;
+}
+.hero-main p{color:var(--gray);max-width:34em;font-size:.95rem}
+
+/* ---- article grid ---- */
+.grid{
+  max-width:960px;margin:0 auto;padding:8px 20px 72px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;
+}
+.card{
+  display:block;text-decoration:none;color:var(--ink);
+  border:1px solid var(--hair);background:var(--paper);
+  padding:22px 22px 18px;transition:border-color .2s;
+}
+.card:hover{border-color:var(--amber)}
+.card-cat{
+  font-size:.72rem;letter-spacing:.18em;color:var(--amber);
+  font-weight:700;margin-bottom:10px;
+}
+.card-title{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.1rem;font-weight:600;line-height:1.6;margin-bottom:10px;
+}
+.card-desc{font-size:.85rem;color:var(--gray);line-height:1.8;margin-bottom:12px}
+.card-date{font-size:.75rem;color:var(--gray)}
+
+/* ---- article page ---- */
+.article{max-width:720px;margin:0 auto;padding:48px 20px 72px}
+.eyebrow{font-size:.75rem;letter-spacing:.2em;color:var(--amber);font-weight:700;margin-bottom:12px}
+.article h1{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.5rem,4vw,2rem);font-weight:600;line-height:1.6;
+  margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid var(--hair);
+}
+.article h2{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.3rem;font-weight:600;margin:44px 0 16px;
+  padding-left:14px;border-left:4px solid var(--amber);line-height:1.6;
+}
+.article h3{font-size:1.05rem;font-weight:700;margin:32px 0 12px}
+.article p{margin-bottom:18px}
+.article ul,.article ol{margin:0 0 18px 1.5em}
+.article li{margin-bottom:6px}
+.article blockquote{
+  background:var(--mist);padding:16px 20px;margin-bottom:18px;
+  border-left:3px solid var(--gray);font-size:.92rem;color:var(--gray);
+}
+.back{margin-top:48px}
+
+/* ---- CTA box ---- */
+.cta{
+  border:1.5px solid var(--ink);background:var(--mist);
+  padding:24px;margin:28px 0;
+}
+.cta-label{font-size:.68rem;letter-spacing:.2em;color:var(--gray);margin-bottom:6px}
+.cta-name{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.15rem;font-weight:600;margin-bottom:8px;
+}
+.cta-desc{font-size:.88rem;color:var(--gray);margin-bottom:16px;line-height:1.8}
+.cta-btn{
+  display:inline-block;background:var(--ink);color:#fff;text-decoration:none;
+  padding:12px 28px;font-size:.9rem;font-weight:700;letter-spacing:.08em;
+  transition:background .2s;
+}
+.cta-btn:hover{background:var(--amber)}
+.cta-btn:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* ---- footer ---- */
+.site-foot{
+  border-top:1px solid var(--hair);background:var(--mist);
+  padding:32px 20px;text-align:center;font-size:.82rem;color:var(--gray);
+}
+.site-foot .fine{margin-top:10px;font-size:.72rem}
+
+@media (max-width:640px){
+  .hero{flex-direction:row;gap:24px;padding:40px 20px}
+  .hero-vertical{font-size:1.05rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="index.html">キャリア羅針盤</a>
+  <p class="tagline">迷わない転職のための実務ノート</p>
+</header>
+<main class="article">
+  <p class="eyebrow">書類・面接 ・ 2026-07-08</p>
+  <h1>通過率が変わる職務経歴書——「実績の数値化」より先にやるべきこと</h1>
+  <p>職務経歴書のノウハウとして「実績を数値化しろ」はよく言われますが、順番が違います。先にやるべきは<strong>構造化</strong>——採用担当者が30秒で全体像を掴める設計にすることです。</p>
+<h2>採用側は「精読」しない</h2>
+<p>書類選考の一次スクリーニングで1通にかけられる時間は数十秒と言われます。その短時間で判断されるのは次の3点です。</p>
+<ul>
+<li><strong>何をしてきた人か</strong>(職種・業界・役割)</li>
+<li><strong>応募ポジションとの接点はあるか</strong></li>
+<li><strong>転職理由に一貫性はあるか</strong></li>
+</ul>
+<p>つまり、冒頭の「職務要約」5行がほぼ勝負を決めます。実績の数値はその後の裏付けです。</p>
+<h2>職務要約の型</h2>
+<ol>
+<li>現在の所属と役割を1文で(業界・職種・年数)</li>
+<li>最も応募先に近い経験を1文で</li>
+<li>定量的な代表実績を1つだけ</li>
+<li>応募ポジションで活かせる強みを1文で</li>
+</ol>
+<p>ここで欲張って実績を3つも4つも並べると、かえって焦点がぼやけます。<strong>代表実績は1つに絞る</strong>のが原則です。</p>
+<h2>数値化の実務</h2>
+<p>数値化と言っても、売上額を書けない職種は多くあります。その場合は次の代替指標が使えます。</p>
+<ul>
+<li>規模:担当した予算・人数・拠点数・案件数</li>
+<li>変化:改善率、期間短縮、コスト削減幅</li>
+<li>相対:社内順位、担当領域のシェア、抜擢の早さ</li>
+</ul>
+<blockquote>「数字がない仕事」はほぼ存在しません。あるのは「数字にする視点を持っていない書き方」だけです。</blockquote>
+<h2>添削は第三者に依頼する</h2>
+<p>自分の書類の弱点は自分では見えません。転職エージェントの書類添削は無料で受けられるため、応募前に一度は通すことを推奨します。</p>
+<aside class="cta"><p class="cta-label">PR</p><p class="cta-name">doda</p><p class="cta-desc">書類添削・面接対策のサポートが手厚い総合型エージェント。職務経歴書のフォーマットやサンプルも充実しており、書類作成の初速を上げるのに向いています。</p><a class="cta-btn" href="https://REPLACE-WITH-YOUR-ASP-LINK" rel="nofollow sponsored" target="_blank">無料で書類添削を受ける</a></aside>
+  <p class="back"><a href="index.html">← 記事一覧へ戻る</a></p>
+</main>
+<footer class="site-foot">
+  <p>メーカーで事業分析・M&A評価に携わる現役会社員が、実体験と一次情報をもとに転職の実務を整理しています。</p>
+  <p class="fine">当サイトはアフィリエイト広告(PR)を含みます。&copy; 2026 キャリア羅針盤</p>
+</footer>
+</body>
+</html>

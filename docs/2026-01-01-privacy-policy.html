@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>運営者情報・プライバシーポリシー | キャリア羅針盤</title>
+<meta name="description" content="当サイトの運営者情報、広告掲載方針、個人情報の取り扱い、免責事項について記載しています。">
+<style>:root{
+  --ink:#1d2b3a;
+  --paper:#ffffff;
+  --mist:#f3f4f1;
+  --amber:#e39b0f;
+  --link:#24589f;
+  --gray:#5c6670;
+  --hair:#d9dcd6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Meiryo,sans-serif;
+  color:var(--ink);background:var(--paper);
+  line-height:1.9;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* ---- header ---- */
+.site-head{
+  max-width:960px;margin:0 auto;padding:28px 20px 20px;
+  border-bottom:1px solid var(--hair);
+  display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+}
+.brand{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.5rem;font-weight:600;letter-spacing:.12em;
+  color:var(--ink);text-decoration:none;
+}
+.tagline{font-size:.78rem;color:var(--gray);letter-spacing:.14em}
+
+/* ---- hero ---- */
+.hero{
+  max-width:960px;margin:0 auto;padding:56px 20px;
+  display:flex;gap:40px;align-items:stretch;
+}
+.hero-vertical{
+  writing-mode:vertical-rl;
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.35rem;letter-spacing:.35em;font-weight:600;
+  border-right:3px solid var(--amber);
+  padding-right:18px;color:var(--ink);
+}
+.hero-main h1{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.6rem,4.5vw,2.4rem);
+  font-weight:600;line-height:1.5;letter-spacing:.05em;margin-bottom:18px;
+}
+.hero-main p{color:var(--gray);max-width:34em;font-size:.95rem}
+
+/* ---- article grid ---- */
+.grid{
+  max-width:960px;margin:0 auto;padding:8px 20px 72px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;
+}
+.card{
+  display:block;text-decoration:none;color:var(--ink);
+  border:1px solid var(--hair);background:var(--paper);
+  padding:22px 22px 18px;transition:border-color .2s;
+}
+.card:hover{border-color:var(--amber)}
+.card-cat{
+  font-size:.72rem;letter-spacing:.18em;color:var(--amber);
+  font-weight:700;margin-bottom:10px;
+}
+.card-title{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.1rem;font-weight:600;line-height:1.6;margin-bottom:10px;
+}
+.card-desc{font-size:.85rem;color:var(--gray);line-height:1.8;margin-bottom:12px}
+.card-date{font-size:.75rem;color:var(--gray)}
+
+/* ---- article page ---- */
+.article{max-width:720px;margin:0 auto;padding:48px 20px 72px}
+.eyebrow{font-size:.75rem;letter-spacing:.2em;color:var(--amber);font-weight:700;margin-bottom:12px}
+.article h1{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.5rem,4vw,2rem);font-weight:600;line-height:1.6;
+  margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid var(--hair);
+}
+.article h2{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.3rem;font-weight:600;margin:44px 0 16px;
+  padding-left:14px;border-left:4px solid var(--amber);line-height:1.6;
+}
+.article h3{font-size:1.05rem;font-weight:700;margin:32px 0 12px}
+.article p{margin-bottom:18px}
+.article ul,.article ol{margin:0 0 18px 1.5em}
+.article li{margin-bottom:6px}
+.article blockquote{
+  background:var(--mist);padding:16px 20px;margin-bottom:18px;
+  border-left:3px solid var(--gray);font-size:.92rem;color:var(--gray);
+}
+.back{margin-top:48px}
+
+/* ---- CTA box ---- */
+.cta{
+  border:1.5px solid var(--ink);background:var(--mist);
+  padding:24px;margin:28px 0;
+}
+.cta-label{font-size:.68rem;letter-spacing:.2em;color:var(--gray);margin-bottom:6px}
+.cta-name{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.15rem;font-weight:600;margin-bottom:8px;
+}
+.cta-desc{font-size:.88rem;color:var(--gray);margin-bottom:16px;line-height:1.8}
+.cta-btn{
+  display:inline-block;background:var(--ink);color:#fff;text-decoration:none;
+  padding:12px 28px;font-size:.9rem;font-weight:700;letter-spacing:.08em;
+  transition:background .2s;
+}
+.cta-btn:hover{background:var(--amber)}
+.cta-btn:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* ---- footer ---- */
+.site-foot{
+  border-top:1px solid var(--hair);background:var(--mist);
+  padding:32px 20px;text-align:center;font-size:.82rem;color:var(--gray);
+}
+.site-foot .fine{margin-top:10px;font-size:.72rem}
+
+@media (max-width:640px){
+  .hero{flex-direction:row;gap:24px;padding:40px 20px}
+  .hero-vertical{font-size:1.05rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="index.html">キャリア羅針盤</a>
+  <p class="tagline">迷わない転職のための実務ノート</p>
+</header>
+<main class="article">
+  <p class="eyebrow">運営情報 ・ 2026-01-01</p>
+  <h1>運営者情報・プライバシーポリシー</h1>
+  <h2>運営者情報</h2>
+<ul>
+<li>サイト名:キャリア羅針盤</li>
+<li>運営者:cloudmonstergenx</li>
+<li>運営者について:メーカーで事業分析・M&amp;A評価等に携わる現役会社員。自身の転職活動の経験をもとに、転職の実務情報を発信しています。</li>
+<li>お問い合わせ:(cloudmonstergenz@gmail.com)</li>
+</ul>
+<h2>広告掲載について</h2>
+<p>当サイトは、アフィリエイトプログラム(A8.net、もしもアフィリエイト等)を利用して商品・サービスを紹介しており、記事内にアフィリエイト広告(PR)を含みます。広告リンクを経由してサービスへの登録・申込みが行われた場合、当サイトは提携先から報酬を受け取ることがあります。</p>
+<p>掲載する広告の有無が、記事内の評価・意見に影響を与えないよう努めています。サービスの最新の料金・内容は、必ず各公式サイトでご確認ください。</p>
+<h2>個人情報の取り扱い</h2>
+<p>当サイトでは、お問い合わせの際にお名前(ハンドルネーム)・メールアドレス等の個人情報をご提供いただく場合があります。取得した個人情報は、お問い合わせへの回答に必要な範囲でのみ利用し、法令に基づく場合を除き第三者に開示することはありません。</p>
+<h2>アクセス解析ツールについて</h2>
+<p>当サイトでは、サイトの改善のためにアクセス解析ツール(Googleアナリティクス等)を利用する場合があります。これらのツールはデータ収集のためにCookieを使用しますが、収集されるデータは匿名であり、個人を特定するものではありません。Cookieの無効化は、お使いのブラウザの設定から行うことができます。</p>
+<h2>免責事項</h2>
+<p>当サイトに掲載する情報は、正確性・最新性の確保に努めていますが、その内容を保証するものではありません。転職・キャリアに関する意思決定は、ご自身の判断と責任において行ってください。当サイトの情報を利用したことにより生じたいかなる損害についても、運営者は責任を負いかねます。</p>
+<p>当サイトからリンクやバナーによって移動した外部サイトで提供される情報・サービスについて、当サイトは一切の責任を負いません。</p>
+<h2>著作権について</h2>
+<p>当サイトに掲載している文章等の著作権は運営者に帰属します。無断転載はご遠慮ください。</p>
+<p>制定日:2026年1月1日</p>
+  <p class="back"><a href="index.html">← 記事一覧へ戻る</a></p>
+</main>
+<footer class="site-foot">
+  <p>メーカーで事業分析・M&A評価に携わる現役会社員が、実体験と一次情報をもとに転職の実務を整理しています。</p>
+  <p class="fine">当サイトはアフィリエイト広告(PR)を含みます。&copy; 2026 キャリア羅針盤</p>
+</footer>
+</body>
+</html>

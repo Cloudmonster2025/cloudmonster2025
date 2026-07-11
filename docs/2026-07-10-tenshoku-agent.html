@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>転職エージェントは「2社併用」が正解——タイプ別の使い分け方 | キャリア羅針盤</title>
+<meta name="description" content="総合型と特化型を1社ずつ併用するのが最も効率的。目的別にエージェントの選び方と使い分けの実務を整理します。">
+<style>:root{
+  --ink:#1d2b3a;
+  --paper:#ffffff;
+  --mist:#f3f4f1;
+  --amber:#e39b0f;
+  --link:#24589f;
+  --gray:#5c6670;
+  --hair:#d9dcd6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",Meiryo,sans-serif;
+  color:var(--ink);background:var(--paper);
+  line-height:1.9;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* ---- header ---- */
+.site-head{
+  max-width:960px;margin:0 auto;padding:28px 20px 20px;
+  border-bottom:1px solid var(--hair);
+  display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+}
+.brand{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.5rem;font-weight:600;letter-spacing:.12em;
+  color:var(--ink);text-decoration:none;
+}
+.tagline{font-size:.78rem;color:var(--gray);letter-spacing:.14em}
+
+/* ---- hero ---- */
+.hero{
+  max-width:960px;margin:0 auto;padding:56px 20px;
+  display:flex;gap:40px;align-items:stretch;
+}
+.hero-vertical{
+  writing-mode:vertical-rl;
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.35rem;letter-spacing:.35em;font-weight:600;
+  border-right:3px solid var(--amber);
+  padding-right:18px;color:var(--ink);
+}
+.hero-main h1{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.6rem,4.5vw,2.4rem);
+  font-weight:600;line-height:1.5;letter-spacing:.05em;margin-bottom:18px;
+}
+.hero-main p{color:var(--gray);max-width:34em;font-size:.95rem}
+
+/* ---- article grid ---- */
+.grid{
+  max-width:960px;margin:0 auto;padding:8px 20px 72px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;
+}
+.card{
+  display:block;text-decoration:none;color:var(--ink);
+  border:1px solid var(--hair);background:var(--paper);
+  padding:22px 22px 18px;transition:border-color .2s;
+}
+.card:hover{border-color:var(--amber)}
+.card-cat{
+  font-size:.72rem;letter-spacing:.18em;color:var(--amber);
+  font-weight:700;margin-bottom:10px;
+}
+.card-title{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.1rem;font-weight:600;line-height:1.6;margin-bottom:10px;
+}
+.card-desc{font-size:.85rem;color:var(--gray);line-height:1.8;margin-bottom:12px}
+.card-date{font-size:.75rem;color:var(--gray)}
+
+/* ---- article page ---- */
+.article{max-width:720px;margin:0 auto;padding:48px 20px 72px}
+.eyebrow{font-size:.75rem;letter-spacing:.2em;color:var(--amber);font-weight:700;margin-bottom:12px}
+.article h1{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:clamp(1.5rem,4vw,2rem);font-weight:600;line-height:1.6;
+  margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid var(--hair);
+}
+.article h2{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.3rem;font-weight:600;margin:44px 0 16px;
+  padding-left:14px;border-left:4px solid var(--amber);line-height:1.6;
+}
+.article h3{font-size:1.05rem;font-weight:700;margin:32px 0 12px}
+.article p{margin-bottom:18px}
+.article ul,.article ol{margin:0 0 18px 1.5em}
+.article li{margin-bottom:6px}
+.article blockquote{
+  background:var(--mist);padding:16px 20px;margin-bottom:18px;
+  border-left:3px solid var(--gray);font-size:.92rem;color:var(--gray);
+}
+.back{margin-top:48px}
+
+/* ---- CTA box ---- */
+.cta{
+  border:1.5px solid var(--ink);background:var(--mist);
+  padding:24px;margin:28px 0;
+}
+.cta-label{font-size:.68rem;letter-spacing:.2em;color:var(--gray);margin-bottom:6px}
+.cta-name{
+  font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  font-size:1.15rem;font-weight:600;margin-bottom:8px;
+}
+.cta-desc{font-size:.88rem;color:var(--gray);margin-bottom:16px;line-height:1.8}
+.cta-btn{
+  display:inline-block;background:var(--ink);color:#fff;text-decoration:none;
+  padding:12px 28px;font-size:.9rem;font-weight:700;letter-spacing:.08em;
+  transition:background .2s;
+}
+.cta-btn:hover{background:var(--amber)}
+.cta-btn:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* ---- footer ---- */
+.site-foot{
+  border-top:1px solid var(--hair);background:var(--mist);
+  padding:32px 20px;text-align:center;font-size:.82rem;color:var(--gray);
+}
+.site-foot .fine{margin-top:10px;font-size:.72rem}
+
+@media (max-width:640px){
+  .hero{flex-direction:row;gap:24px;padding:40px 20px}
+  .hero-vertical{font-size:1.05rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<header class="site-head">
+  <a class="brand" href="index.html">キャリア羅針盤</a>
+  <p class="tagline">迷わない転職のための実務ノート</p>
+</header>
+<main class="article">
+  <p class="eyebrow">エージェント活用 ・ 2026-07-10</p>
+  <h1>転職エージェントは「2社併用」が正解——タイプ別の使い分け方</h1>
+  <p>転職エージェント選びで最も多い失敗は、「1社に絞る」か「5社以上に登録して管理不能になる」かの両極端です。実務的な最適解はシンプルで、<strong>総合型1社+特化型1社の2社併用</strong>です。</p>
+<h2>なぜ2社併用なのか</h2>
+<ul>
+<li><strong>求人の網羅性</strong>:総合型は求人数が多く市場全体を把握できる</li>
+<li><strong>提案の質</strong>:特化型は業界知識が深く、書類や面接対策の精度が高い</li>
+<li><strong>相場観の較正</strong>:2社の提示案件・想定年収を比較すると、自分の市場価値のブレが小さくなる</li>
+</ul>
+<p>3社以上になると面談・連絡対応だけで週数時間を消費します。働きながらの転職活動では、2社が管理コストと情報量のバランス点です。</p>
+<h2>総合型:まず登録すべき1社</h2>
+<p>求人数と実績で選ぶなら、大手総合型が起点になります。</p>
+<aside class="cta"><p class="cta-label">PR</p><p class="cta-name">リクルートエージェント</p><p class="cta-desc">業界最大級の求人数を持つ総合型エージェント。まず市場全体を把握するための1社目として最適。非公開求人も多く、初回面談で市場価値の目安がつかめます。</p><a class="cta-btn" href="https://REPLACE-WITH-YOUR-ASP-LINK" rel="nofollow sponsored" target="_blank">公式サイトで無料登録</a></aside>
+<h2>特化型:キャリアの方向性で選ぶ2社目</h2>
+<ul>
+<li><strong>ハイクラス・年収600万円以上を狙う</strong>:スカウト型サービスで市場からの評価を可視化する</li>
+<li><strong>同業界での専門性を深める</strong>:業界特化エージェントで具体的な案件を比較する</li>
+<li><strong>20代・未経験領域への挑戦</strong>:ポテンシャル採用に強いサービスを選ぶ</li>
+</ul>
+<aside class="cta"><p class="cta-label">PR</p><p class="cta-name">ビズリーチ</p><p class="cta-desc">職務経歴書を登録するとヘッドハンター・企業からスカウトが届くハイクラス型。「今の自分にどんなオファーが来るか」で市場価値を測る使い方が有効です。</p><a class="cta-btn" href="https://REPLACE-WITH-YOUR-ASP-LINK" rel="nofollow sponsored" target="_blank">無料で市場価値を確認する</a></aside>
+<h2>使い分けの実務ポイント</h2>
+<ol>
+<li>初回面談では希望条件を広めに伝え、提案の幅を見る</li>
+<li>同じ求人に複数経路で応募しない(企業側の心証を損ねます)</li>
+<li>書類添削は特化型、求人検索は総合型と役割を分ける</li>
+<li>3か月動いて手応えがなければ、担当変更かエージェント入替を検討する</li>
+</ol>
+<blockquote>エージェントは「使われる」のではなく「使う」ものです。主導権を自分に置いたまま、情報収集の窓口として活用するのが正しい距離感です。</blockquote>
+  <p class="back"><a href="index.html">← 記事一覧へ戻る</a></p>
+</main>
+<footer class="site-foot">
+  <p>メーカーで事業分析・M&A評価に携わる現役会社員が、実体験と一次情報をもとに転職の実務を整理しています。</p>
+  <p class="fine">当サイトはアフィリエイト広告(PR)を含みます。&copy; 2026 キャリア羅針盤</p>
+</footer>
+</body>
+</html>
